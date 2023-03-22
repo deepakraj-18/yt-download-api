@@ -14,7 +14,8 @@ def index():
 def download():
     url = request.args.get('url', default='', type=str)
 
-    return YouTube(url).streams.filter(type="audio").first().download(".\\songs\\")
+#     return YouTube(url).streams.filter(type="audio").first().download(".\\songs\\")
+    return "<h1>API Response</h1>"
 
 
 if __name__ == '__main__':
